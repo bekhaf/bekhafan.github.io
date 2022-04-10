@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-Thin.woff2") format("woff2");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-Extralight.woff2") format("woff2");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda/PeydaWeb-Black.woff2") format("woff2");
+  font-weight: 900;
+}
+
+[class*='peyda'] {
+  font-family: "Peyda";
+}
+
+[class*='-100'] {
+  font-weight: 100;
+}
+
+[class*='-200'] {
+  font-weight: 200;
+}
+
+[class*='-300'] {
+  font-weight: 300;
+}
+
+[class*='-400'] {
+  font-weight: 400;
+}
+
+[class*='-500'] {
+  font-weight: 500;
+}
+
+[class*='-600'] {
+  font-weight: 600;
+}
+
+[class*='-700'] {
+  font-weight: 700;
+}
+
+[class*='-800'] {
+  font-weight: 800;
+}
+
+[class*='-900'] {
+  font-weight: 900;
+}
+
+[class*='-08'] {
+  font-size: 8px;
+}
+
+[class*='-09'] {
+  font-size: 9px;
+}
+
+[class*='-10'] {
+  font-size: 10px;
+}
+
+[class*='-11'] {
+  font-size: 11px;
+}
+
+[class*='-12'] {
+  font-size: 12px;
+}
+
+[class*='-13'] {
+  font-size: 13px;
+}
+
+[class*='-14'] {
+  font-size: 14px;
+}
+
+[class*='-16'] {
+  font-size: 16px;
+}
+
+[class*='-18'] {
+  font-size: 18px;
+}
+
+[class*='-20'] {
+  font-size: 20px;
+}
+
+[class*='-22'] {
+  font-size: 22px;
+}
+
+[class*='-24'] {
+  font-size: 24px;
+}
+
+[class*='-32'] {
+  font-size: 32px;
+}
+
+[class*='-48'] {
+  font-size: 48px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F8F5F1;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile > * {
+  margin-bottom: 8px;
+}
+
+.profile__picture {
+  width: 360px;
+  margin: 32px 0;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .profile__picture {
+    width: 200px;
+  }
+}
+
+.profile__name {
+  font-family: 'Sacramento', cursive;
+  font-size: 46px;
+  color: #343F56;
+}
+
+.profile__description {
+  text-align: center;
+  margin: 0 24px 64px;
+  color: #343F56;
+}
+
+.links-container {
+  list-style-type: none;
+  width: 360px;
+  padding: 16px;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .links-container {
+    width: 90vw;
+  }
+}
+
+.links-container a {
+  text-decoration: none;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  color: #F8F5F1;
+  background-color: #E9896A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out;
+}
+
+.links-container a:hover {
+  background-color: #387C6D;
+}
+
+.links-container a:last-child {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
