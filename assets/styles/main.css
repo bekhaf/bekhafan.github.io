@@ -170,6 +170,8 @@ body {
 }
 
 .container {
+  width: 100%;
+  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +185,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: red;
 }
 
 .profile {
@@ -206,7 +209,7 @@ body {
 }
 
 .profile__picture {
-  width: 360px;
+  width: 100%;
   margin: 32px 0;
   border-radius: 50%;
 }
