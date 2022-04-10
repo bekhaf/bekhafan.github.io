@@ -271,6 +271,7 @@ a {
   padding: 8px;
   margin-bottom: 8px;
   border-radius: 8px;
+  position: relative;
   color: #F8F5F1;
   background-color: #E9896A;
   display: -webkit-box;
@@ -288,6 +289,13 @@ a {
 
 .links-container a:hover {
   background-color: #387C6D;
+}
+
+.links-container a > img {
+  height: 46px;
+  position: absolute;
+  top: -46px;
+  left: 24px;
 }
 
 .creator {
