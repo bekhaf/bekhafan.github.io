@@ -12,7 +12,7 @@ for (let i = 0; i < linkGroups.length; i++) {
       lg.style.height = '';
     } else {
       lg.classList.add('link-group--active');
-      lg.style.height = links.children.length * 30 + 43 + 'px';
+      lg.style.height = links.children.length * 30 + 54 + 'px';
     }
   })
 }
