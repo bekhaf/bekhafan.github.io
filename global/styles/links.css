@@ -1,5 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 @font-face {
   font-family: "Peyda";
   src: url("../fonts/Peyda/PeydaWeb-Thin.woff2") format("woff2");
@@ -150,23 +180,6 @@
   font-size: 48px;
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  direction: rtl;
-}
-
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,14 +193,10 @@ body {
   background-color: #F8F5F1;
 }
 
-a {
-  text-decoration: none;
-}
-
 .horizontal-line {
   width: 100%;
   height: 1px;
-  margin: 32px 0 64px !important;
+  margin: 32px 0 80px !important;
   background-color: #a1a1a1;
 }
 
@@ -233,7 +242,6 @@ a {
 
 .profile__picture {
   width: 60%;
-  border-radius: 50%;
 }
 
 .profile__name {
@@ -244,8 +252,11 @@ a {
 
 .profile__description {
   text-align: center;
-  margin-bottom: 64px;
   color: #343F56;
+}
+
+.instagram-profile-pic {
+  border-radius: 50%;
 }
 
 .links-container {
@@ -266,14 +277,57 @@ a {
           align-items: center;
 }
 
-.links-container a {
+.link-group {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 43px;
+  -webkit-transition: height .6s ease-in-out;
+  transition: height .6s ease-in-out;
+}
+
+.link-group__btn {
+  z-index: 10;
+}
+
+.link-group__links {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link-group__sub-link {
+  font-family: "peyda";
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #387C6D;
+}
+
+.link-group--active .link-group__btn {
+  background-color: #387C6D;
+}
+
+.link-btn {
+  font-family: "peyda";
+  font-weight: 900;
   width: 100%;
   padding: 8px;
   margin-bottom: 8px;
   border-radius: 8px;
   position: relative;
-  color: #F8F5F1;
-  background-color: #E9896A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,17 +341,6 @@ a {
   transition: background-color .25s ease-in-out;
 }
 
-.links-container a:hover {
-  background-color: #387C6D;
-}
-
-.links-container a > img {
-  height: 46px;
-  position: absolute;
-  top: -46px;
-  left: 24px;
-}
-
 .creator {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -306,11 +349,11 @@ a {
 
 .creator a {
   color: #222831;
-  -webkit-transition: color .2s easeinout;
-  transition: color .2s easeinout;
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
 }
 
 .creator a:hover {
   color: #387C6D;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=links.css.map */
