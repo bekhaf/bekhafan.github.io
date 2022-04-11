@@ -15,7 +15,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a,
+button {
   direction: rtl;
 }
 
@@ -315,10 +317,24 @@ body {
   font-weight: 600;
   margin-bottom: 8px;
   color: #387C6D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .link-group--active .link-group__btn {
   background-color: #387C6D;
+}
+
+.link-icon {
+  height: 20px;
+  margin: 0 8px;
 }
 
 .link-btn {
