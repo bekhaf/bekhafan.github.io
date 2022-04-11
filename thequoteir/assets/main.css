@@ -7,17 +7,17 @@
   background-color: #387C6D;
 }
 
-.link-btn > img {
+.link-btn.includes-image > img {
   height: 46px;
   position: absolute;
   top: -46px;
 }
 
-.link-btn > img:nth-of-type(1) {
+.link-btn.includes-image > img:nth-of-type(1) {
   right: 24px;
 }
 
-.link-btn > img:nth-of-type(2) {
+.link-btn.includes-image > img:nth-of-type(2) {
   left: 24px;
 }
 /*# sourceMappingURL=main.css.map */
