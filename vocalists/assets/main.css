@@ -1,5 +1,5 @@
 body {
-  background-color: #EEF2F5;
+  background-color: #ECDBBA;
 }
 
 .container {
@@ -36,18 +36,18 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size: 28px;
   text-align: center;
-  color: #612570;
-  text-shadow: 4px 4px 0px #EA168E40;
+  text-shadow: 4px 4px 0px rgba(52, 103, 81, 0.25);
+  color: #161616;
   margin-bottom: 16px;
 }
 
 .profile__description {
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
+  text-shadow: 4px 4px 0px rgba(52, 103, 81, 0.25);
   text-align: center;
-  color: #EA168E;
-  text-shadow: 4px 4px 0px #EA168E40;
   margin-bottom: 120px;
+  color: #346751;
 }
 
 .link-btn {
@@ -55,13 +55,17 @@ body {
   font-size: 12px;
   text-align: center;
   height: 46px;
-  color: #EEF2F5;
-  background-color: #612570;
+  color: #ECDBBA;
+  background-color: #161616;
+}
+
+.link-btn:nth-of-type(2) {
+  background-color: #346751;
 }
 
 .cta-btn__youtube {
   font-family: 'Press Start 2P';
-  background-color: #EA168E;
+  background-color: #C84B31;
 }
 
 .cta-btn__youtube img {
@@ -71,12 +75,7 @@ body {
   bottom: 46px;
 }
 
-.creator {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-.creator a:hover {
-  color: #1EAFED;
+.creator > a:hover {
+  color: #346751;
 }
 /*# sourceMappingURL=main.css.map */
