@@ -77,11 +77,11 @@ body {
 .creator {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #EBECF1;
+  color: #1B1C25;
 }
 
 .creator a {
-  color: #EBECF1;
+  color: #1B1C25;
 }
 
 .creator a:hover {
@@ -93,9 +93,9 @@ body {
 }
 
 .mic {
-  height: 60px;
+  height: 140px;
   position: absolute;
   bottom: 100%;
-  right: 24px;
+  right: 8px;
 }
 /*# sourceMappingURL=main.css.map */
