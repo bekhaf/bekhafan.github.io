@@ -71,6 +71,8 @@ body {
 }
 
 .instagram-profile-pic {
+  width: 60% !important;
+  margin-top: 32px;
   border-radius: 50%;
 }
 
@@ -188,5 +190,49 @@ body {
 
 .creator a:hover {
   color: #387C6D;
+}
+
+.right-animation {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  -webkit-animation-name: r-animation;
+          animation-name: r-animation;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+@-webkit-keyframes r-animation {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes r-animation {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
 }
 /*# sourceMappingURL=links.css.map */

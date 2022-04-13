@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'filimo';
+  src: url("./filimo.ttf");
+}
+
 body {
-  background-color: #ECDBBA;
+  background-color: #DDDDDD;
 }
 
 .container {
@@ -29,53 +34,54 @@ body {
 
 .profile__picture {
   width: 100%;
-  margin-bottom: 64px;
 }
 
 .profile__name {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Mountains of Christmas', cursive;
   font-size: 28px;
   text-align: center;
   text-shadow: 4px 4px 0px rgba(52, 103, 81, 0.25);
-  color: #161616;
+  color: #222831;
   margin-bottom: 16px;
 }
 
 .profile__description {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 14px;
-  text-shadow: 4px 4px 0px rgba(52, 103, 81, 0.25);
   text-align: center;
-  margin-bottom: 120px;
-  color: #346751;
+}
+
+.link-group {
+  height: 46px;
+}
+
+.link-group__links a {
+  text-align: justify;
+  color: #30475E;
 }
 
 .link-btn {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 12px;
+  font-family: 'filimo';
   text-align: center;
+  font-weight: 100;
+  font-size: 20px;
   height: 46px;
-  color: #ECDBBA;
-  background-color: #161616;
-}
-
-.link-btn:nth-of-type(2) {
-  background-color: #346751;
+  color: #DDDDDD;
+  background-color: #30475E;
 }
 
 .cta-btn__youtube {
-  font-family: 'Press Start 2P';
-  background-color: #C84B31;
+  background-color: #E8575F;
 }
 
-.cta-btn__youtube img {
-  position: absolute;
-  height: 100px;
-  right: 24px;
-  bottom: 46px;
+.creator {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-.creator > a:hover {
+.creator a:hover {
   color: #346751;
+}
+
+.link-group--active .link-group__btn {
+  background-color: #E8575F;
 }
 /*# sourceMappingURL=main.css.map */
