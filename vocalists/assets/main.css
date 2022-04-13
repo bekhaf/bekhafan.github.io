@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #DDDDDD;
+  background-color: #EBECF1;
 }
 
 .container {
@@ -13,6 +13,7 @@ body {
 
 .profile {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,13 +41,14 @@ body {
   font-family: 'Mountains of Christmas', cursive;
   font-size: 28px;
   text-align: center;
-  text-shadow: 4px 4px 0px rgba(52, 103, 81, 0.25);
-  color: #222831;
+  text-shadow: 4px 4px 0px #206A5D40;
+  color: #206A5D;
   margin-bottom: 16px;
 }
 
 .profile__description {
   text-align: center;
+  color: #1F4068;
 }
 
 .link-group {
@@ -55,7 +57,7 @@ body {
 
 .link-group__links a {
   text-align: justify;
-  color: #30475E;
+  color: #1B1C25;
 }
 
 .link-btn {
@@ -64,24 +66,36 @@ body {
   font-weight: 100;
   font-size: 20px;
   height: 46px;
-  color: #DDDDDD;
-  background-color: #30475E;
+  color: #EBECF1;
+  background-color: #1F4068;
 }
 
 .cta-btn__youtube {
-  background-color: #E8575F;
+  background-color: #206A5D;
 }
 
 .creator {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  color: #EBECF1;
+}
+
+.creator a {
+  color: #EBECF1;
 }
 
 .creator a:hover {
-  color: #346751;
+  color: #206A5D;
 }
 
 .link-group--active .link-group__btn {
-  background-color: #E8575F;
+  background-color: #206A5D;
+}
+
+.mic {
+  height: 60px;
+  position: absolute;
+  bottom: 100%;
+  right: 24px;
 }
 /*# sourceMappingURL=main.css.map */
